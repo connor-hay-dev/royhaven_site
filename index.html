@@ -8,25 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./images/royhaven_logo.png" width="80" height="80" alt="" id="logo">
+                <img src="./images/royhaven_logo.png" width="80" height="80" alt="Royhaven Logo" id="logo">
             </a>
             <h1 class="heading" id="Royhaven">Royhaven</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/photo_gallery.html">Photo Gallery</a>
@@ -50,7 +48,7 @@
             </div>
         </div>
     </nav>
-    <div id="phillip_island_images" class="carousel slide" data-ride="carousel">
+    <div id="phillip_island_images" class="carousel slide" data-ride="carousel" data-interval="4000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="./images/nobbies.jpg" alt="First slide">
@@ -71,45 +69,118 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="overlay-div">
-            <h2>Welcome to Royhaven Holiday Let</h2>
-            <p>Where every stay is unique!</p>
-        </div>
     </div>
-    <div class="full-screen">
-        <div class="container my-5" id="house-description">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Escape to Royhaven: Your Charming Phillip Island Getaway</h2>
-                    <p class="card-text">Royhaven invites you to a delightful escape on Phillip Island. This enchanting Cape Cod-style house, brimming with renovated charm and character, offers the perfect beachside retreat.</p>
-        
-                    <h4>Accommodation:</h4>
-                    <p class="card-text">Royhaven features three spacious bedrooms and a fourth 'snug' or occasional bedroom, comfortably sleeping up to 11 guests. The ground floor master bedroom boasts fitted wardrobes and an ensuite shower room. The family bathroom includes a bath with a shower overhead, and there’s a separate toilet for convenience. A small laundry area is equipped with a washing machine, iron, ironing board, and an outdoor family-sized laundry line.</p>
-        
-                    <h4>Climate Control:</h4>
-                    <p class="card-text">The main living area is equipped with a split system and a cosy wood heater for cooler months. Upstairs bedrooms also feature wardrobes and split system heating/cooling.</p>
-        
-                    <h4>Entertainment:</h4>
-                    <p class="card-text">Relax in the lounge with a large TV, Blu-ray DVD player, and a selection of DVDs for all ages. The fully equipped kitchen includes all-electric cooking facilities, a cooktop, oven, dishwasher, microwave, toaster, kettle, electric frypan, slow cooker, veggie steamer, and a family-sized fridge freezer.</p>
-        
-                    <h4>Outdoor Bliss:</h4>
-                    <p class="card-text">Step outside to find BBQ facilities, a large undercover deck with comfy sofas, Adirondack chairs, and a dining setting for eight. There’s parking for four cars and a double garage transformed into a wet day room, complete with a dartboard, sofa, and table tennis.</p>
-        
-                    <h4>Location:</h4>
-                    <p class="card-text">Nestled behind secure gates and surrounded by private gardens, Royhaven is just a 3-minute stroll into Cowes town. Thompson Avenue’s restaurants, cafés, and shops are practically at your doorstep, making it an ideal location for families of all ages. A 15-minute stroll along Thompson Ave brings you to the beautiful Cowes Beach.</p>
-        
-                    <h4>Nearby Beaches:</h4>
-                    <p class="card-text">For a quieter beach experience, Red Rocks is just a 5-minute drive or a 15-minute bike ride along Settlement Road. Enjoy miles of sandy coastline, perfect for beach cricket, swimming in warm shallow waters, and watching stunning sunsets.</p>
-        
-                    <h4>Rainy Day Activities:</h4>
-                    <p class="card-text">On wet days, explore ten-pin bowling and mini-golf in Cowes, or visit nearby attractions such as the Vietnam Veteran Museum, Amaze N Things, The Big Wave, or the Chocolate Factory.</p>
-        
-                    <h4>Perfect for Every Weather:</h4>
-                    <p class="card-text">With easy access to all of Phillip Island’s best attractions, Royhaven is the ultimate spot to unwind and relax, no matter the weather. Embrace the charm and convenience of this delightful holiday house for a memorable island getaway.</p>
+    <div class="overlay-div">
+        <h2>Welcome to Royhaven Holiday Let</h2>
+        <p>Where every stay is unique!</p>
+    </div>
+    <div class="container my-4 custom-container custom-background">
+        <div class="transparent-container">
+            <div class="tiles-heading">
+                <h2>You should stay at Royhaven because...</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Accommodation</h4>
+                            <p class="card-text">Three spacious bedrooms, a fourth 'snug' or occasional bedroom, sleeping up to 11 guests. Ground floor master bedroom with fitted wardrobes and ensuite shower room. Family bathroom with bath and shower, separate toilet, and small laundry area.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Climate Control</h4>
+                            <p class="card-text">Main living area with split system and wood heater. Upstairs bedrooms with wardrobes and split system heating/cooling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Entertainment</h4>
+                            <p class="card-text">Lounge with large TV, Blu-ray DVD player, and DVDs. Fully equipped kitchen with all-electric cooking, dishwasher, microwave, and family-sized fridge freezer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Outdoor Bliss</h4>
+                            <p class="card-text">BBQ facilities, large undercover deck with comfy sofas and dining for eight. Parking for four cars and double garage with dartboard, sofa, and table tennis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Location</h4>
+                            <p class="card-text">Just a 3-minute stroll to Cowes town. Thompson Avenue’s restaurants, cafés, and shops are at your doorstep. A 15-minute stroll to Cowes Beach.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Nearby Beaches</h4>
+                            <p class="card-text">Red Rocks beach is a 5-minute drive or 15-minute bike ride. Enjoy sandy coastline, perfect for beach cricket, swimming, and watching sunsets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Rainy Day Activities</h4>
+                            <p class="card-text">Explore ten-pin bowling and mini-golf in Cowes, or visit the Vietnam Veteran Museum, Amaze N Things, The Big Wave, or the Chocolate Factory.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Perfect for Every Weather</h4>
+                            <p class="card-text">Easy access to all of Phillip Island’s attractions. Ideal spot to unwind and relax, no matter the weather. Embrace the charm and convenience of this delightful holiday house.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3 d-flex align-items-stretch">
+                    <div class="card w-100 tile">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">Penguins</h4>
+                            <p class="card-text">We have penguins... Do you need another reason?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.overlay-div').hide().fadeIn(2000);
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tiles = document.querySelectorAll('.tile');
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+    
+            tiles.forEach(tile => {
+                observer.observe(tile);
+            });
+        });
+    </script>
 </body>
 </html>

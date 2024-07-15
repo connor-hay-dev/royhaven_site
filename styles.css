@@ -1,3 +1,10 @@
+body {
+    background-color: #a1dcf8; /* Change this to your desired background colour */
+    margin: 0;
+    padding: 0;
+}
+
+
 #navbar {
     position: absolute;
     top: 0;
@@ -79,10 +86,64 @@
  }
 
  .full-screen {
-    background-color: #a5d3f5; /* Light blue background */
+    background-color: #a7cbea; /* Light blue background */
     width: 100vw;
-    height: auto;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+.tiles-heading {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+.custom-background {
+    background-color: #addced; /* Change this to your desired colour */
+    padding: 20px; /* Optional: Add some padding */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tile {
+    opacity: 0;
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+.tile.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .navbar-brand, .navbar-nav {
+        text-align: center;
+    }
+
+    .overlay-div h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlay-div p {
+        font-size: 1rem;
+    }
 }
