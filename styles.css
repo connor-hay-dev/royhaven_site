@@ -16,6 +16,8 @@ body {
 
 .navbar-collapse {
     justify-content: flex-end;
+    z-index: 1000;
+
 }
 
 .heading {
@@ -23,6 +25,15 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+.photos-heading {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style: normal;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .nav-link {
@@ -52,7 +63,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 500;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -127,11 +138,63 @@ body {
 .tile {
     opacity: 0;
     transition: opacity 0.6s, transform 0.6s;
+    
+}
+
+.card-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card-text {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 .tile.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+#photo_gallery_images {
+    width: 100vw;
+    height: 100vh; /* You can adjust this percentage to your preference */
+    margin: 0 auto; /* Centre the carousel */
+}
+
+/* Ensure the images are not stretched */
+#photo_gallery_images .carousel-item img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#photo_gallery_images .carousel-control-prev-icon, #photo_gallery_images .carousel-control-next-icon {
+        background-color:black;
+    }
+
+.footer-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width: 768px) {
@@ -145,5 +208,13 @@ body {
 
     .overlay-div p {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-icons {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 }
