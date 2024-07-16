@@ -53,7 +53,7 @@ body {
 }
 
 .carousel-item img {
-    width: 100%;
+    width: auto;
     height: 100vh;
     top: 0;
 }
@@ -199,6 +199,14 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .carousel-item img {
+        object-fit: cover; /* Ensures the images cover the area without distortion */
+        object-position: center; /* Centres the image within the container */
+        width: 100vw;
+        height: 100vh;
+    }
+
     .navbar-brand, .navbar-nav {
         text-align: center;
     }
